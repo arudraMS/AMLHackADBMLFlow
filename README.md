@@ -5,7 +5,14 @@
 
 2.  Creating Databricks Cluster
 
-3.  Running Sample ML Flow Notebook
+3.  Importing Notebooks
+
+4.  Databricks Extensibility
+
+5.  Uploading Manual Data
+
+6.  Let's dig into the notebook.
+
 
 ## 1. Preparing Environment – Securing Sensitive Information
 
@@ -64,7 +71,7 @@ Steps to Create a Secret Scope:
 
 ![](media/4dd2abcbb68c5124894fd6b5be64c156.png)
 
-### Create a Databricks Cluster
+## 2. Create a Databricks Cluster
 
 
 ![](media/8b31fbf8b0502a6520c2163e721b74bb.png)
@@ -122,7 +129,7 @@ Install ML Flow
 
 
 
-### Importing Notebooks 
+## 3. Importing Notebooks 
 
 
 When you export a notebook as HTML, IPython notebook, or archive (DBC), and you have not cleared the results, the results of running the notebook are included.
@@ -166,7 +173,7 @@ Go ahead and create a folder - samples and place them in there.
 
 
 
-### Databricks Extensibility (Optional Content):
+## 4. Databricks Extensibility (Optional Content):
 
 Databricks Rest APIS <https://docs.databricks.com/dev-tools/api/index.html>
 
@@ -197,7 +204,7 @@ Just don't forget to provide the token
 
 
 
-### Uploading Data Manually
+## 5. Uploading Data Manually
 
 
 Uploading Datasets:
@@ -206,23 +213,22 @@ Uploading Datasets:
 
 
 
-### ML Flow
+## 6.  Let's dig into the notebook
 
+In the notebook we will cover:
 
-[MLflow](https://www.mlflow.org/) is an open source platform for managing the
-end-to-end machine learning lifecycle. It has the following primary components:
-
--   **Tracking**: Allows you to track experiments to record and compare
-    parameters and results.
-
--   **Models**: Allow you to manage and deploy models from a variety of ML
-    libraries to a variety of model serving and inference platforms.
-
--   **Projects**: Allow you to package ML code in a reusable, reproducible form
-    to share with other data scientists or transfer to production.
-
--   Model Registry: Allows you to centralize a model store for managing models’
-    full lifecycle stage transitions: from staging to production, with
-    capabilities for versioning and annotating.
-
--   Model Serving: Allows you to host MLflow Models as REST endpoints.
+-	Protecting Sensitive Data: setting up an Azure KeyVault Back Secret Scope
+-	Reviewing the existing Databricks environment (cluster creation, library installs etc)
+-	Databricks REST APIs intro
+-	Leveraging an external notebook with our secret scopes (updating a class to reflect what currently is marked as secret scopes)
+-	Importing data into databricks (wine dataset)
+-	Reading csv into Spark Dataframe & Pandas Dataframe
+-	Adding columns to Spark Dataframe
+-	Adding columns to Pandas Dataframe
+-	Creating Tables
+-	Creating plots for analysis
+-	Create Model
+-	Registering a model
+-	Improve Model
+-	Archiving Model and moving previous model to archive
+-	Registering Model in Azure ML and Deploying to AKS Cluster
