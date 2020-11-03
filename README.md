@@ -17,6 +17,7 @@ Good additional resources:
 
 <https://docs.microsoft.com/en-us/azure/databricks/_static/notebooks/pandas-to-koalas-in-10-minutes.html>
 
+<https://spark.apache.org/docs/latest/>
 
 
 ## 1. Preparing Environment – Securing Sensitive Information
