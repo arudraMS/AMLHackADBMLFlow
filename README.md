@@ -11,7 +11,7 @@
 
 5.  Uploading Manual Data
 
-6.  Running Sample Notebook
+6.  Let's dig into the notebook.
 
 
 ## 1. Preparing Environment – Securing Sensitive Information
@@ -51,6 +51,15 @@ Enter a scope name, and enter the Azure Key Vault DNS name and Resource ID you
 saved earlier. Save the scope name in a text editor for use later in this
 tutorial. Then, select Create.
 
+Creating the Secret Scope 
+As an FYI - we could do this using:
+
+- Databricks ClI
+- Databricks APIs
+- Through the Portal
+
+Often this will be part of a an IAC deployment, but consider the use case of 3rd party API keys.
+
 Steps to Create a Secret Scope:
 
 1.  Go to the url for your databaricks environment and add
@@ -58,14 +67,17 @@ Steps to Create a Secret Scope:
 
 ![](media/cf9e3f1f5ed0dfc337f4d6b53b77a0e8.png)
 
-1.  Head over to the Azure portal to view our resources.
+2.  Head over to the Azure portal to view our resources.
 
     Portal.azure.com - open the key vault and head to properties and grab the
     **Vault URI** and the **Resource ID** to place into our secret scope
 
 ![](media/12e34099ccef19d1031d9e9bb30b6907.png)
 
-1.  Here we can provide into the databricks secret scope the Vault URI into the
+5.  Note for the name, it needs to be unique.  A recommendation would be to user your initials to make it unique to yourself.
+
+
+4.  Here we can provide into the databricks secret scope the Vault URI into the
     DNS name, as well as the Resource ID into the ResourceID. For Manage
     Principal -
 
@@ -190,7 +202,7 @@ Click on the **generate new token** button
 
 ### Sample Curl to get list of clusters  (Optional Content):
 ```
-curl -X GET -H 'Authorization: Bearer dapiXXXXXXXXXXXXXXXXXXX' https://adb-1797455930767468.0.databricks.azure.us//api/2.0/clusters/list
+curl -X GET -H 'Authorization: Bearer dapi09a1af0770a1c777e4b962e8a54607e1' https://adb-1797455930767468.0.databricks.azure.us//api/2.0/clusters/list
 ```
 
 We can also examine the list of secrets in a secret scope.
@@ -232,3 +244,5 @@ In the notebook we will cover:
 -	Improve Model
 -	Archiving Model and moving previous model to archive
 -	Registering Model in Azure ML and Deploying to AKS Cluster
+
+
