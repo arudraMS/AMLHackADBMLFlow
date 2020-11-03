@@ -83,16 +83,34 @@ Steps to Create a Secret Scope:
 
 ![](media/4dd2abcbb68c5124894fd6b5be64c156.png)
 
+**Keep the name of your secret scope handy**
+
 ## 2. Create a Databricks Cluster
 
+Let's create a databricks cluster by clicking on the cluster tab.
 
-![](media/8b31fbf8b0502a6520c2163e721b74bb.png)
+Let's leverage the 7.3 Runtime
+
+<https://docs.databricks.com/release-notes/runtime/7.3ml.html>
+
+![](media/11_CreateCluster.PNG)
+
+Then click on the `Create Cluster` button
+
+![](media/12_CreateCluster.PNG)
+
+
 
 **Provide a cluster name** – each cluster must have a unique name.
 
+Typically if I am working in a shared envirment, I will use my initials if that works for the team.
+
+![](media/13_CreateCluster.PNG)
+
+
 ![](media/1316441e18b24bba72d098e3b977b797.png)
 
-Select a Cluster Mode:
+Select a Cluster Mode of **Standard**
 
 ![](media/e1ab58bc98a50dd701efe6de8b145e24.png)
 
@@ -102,6 +120,7 @@ Select a Cluster Mode:
 | :---------| :----------------------------------------------|
 | Standard | A standard cluster is meant to be used by 1 user|
 |High Concurrency| Shared for multiple users |
+| Single Node| A Single Node cluster is a cluster consisting of a Spark driver and no Spark workers (in public preview) |
 
 ![](media/cb254ed5e6b9bb725c18e51b600e6888.png)
 
@@ -111,19 +130,18 @@ Select a Cluster Mode:
 Speeds up cluster creation using existing available Azure vms
 
 
-https://docs.microsoft.com/en-us/azure/databricks/clusters/instance-pools/
+<https://docs.microsoft.com/en-us/azure/databricks/clusters/instance-pools/>
 
 ![](media/8ab523d1124aa55fd3c00db7a24d8366.png)
 
 | Options|Description|
 | :---------| :---------------------------------------------------------------|
-| Enable Auto-scalling | Good if uncertain how many clusters you wil need|
+| Enable Auto-scalling | Good if uncertain how many clusters you wil need, or great varability in your job|
 | Auto shutdown | Makes sense to use|
 | Worker Type | Select based on the work load. |
 |Drive Type| Select based on the work load, if bringing a lot of data back to the head node, then give the driver more resources|
 
 ### FYI - Advanced Options
-
 
 <https://docs.microsoft.com/en-us/azure/databricks/clusters/configure#spark-config>
 
