@@ -247,23 +247,18 @@ Just don't forget to provide the token
 
 
 
-## 6. Uploading Data Manually
-
-
-Uploading Datasets:
-
-![](media/a8fc39b1bf631d7b639ee11c538f79d8.png)
-
-
-
-## 7.  Let's dig into the notebook
+## 6.  Let's dig into the notebook
 
 In the notebook we will cover:
 
--	Protecting Sensitive Data: setting up an Azure KeyVault Back Secret Scope
--	Reviewing the existing Databricks environment (cluster creation, library installs etc)
--	Databricks REST APIs intro
+
 -	Leveraging an external notebook with our secret scopes (updating a class to reflect what currently is marked as secret scopes)
+
+The existing class works with the following parameters in key-Vault, we can update the class to leverage what you currently have in key vault.
+
+![](media/16_keyvault_secrets.PNG)
+
+
 -	Importing data into databricks (wine dataset)
 -	Reading csv into Spark Dataframe & Pandas Dataframe
 -	Adding columns to Spark Dataframe
@@ -271,9 +266,44 @@ In the notebook we will cover:
 -	Creating Tables
 -	Creating plots for analysis
 -	Create Model
+
+Afer running the experiement, we have established a model.  Check out the experiements icon.
+
+![](media/18_ViewingExperiments.PNG)
+
+
+![](media/19_ViewExeriments.PNG)
+
+We can also view the experiment in full.
+
+![](media/20_FullViewExperiment.PNG)
+
+You can scroll down and view the artifacts captured for the model.
+
+![](media/21_FullCapturedModel.PNG)
+
+![](media/22_Artifacts.PNG)
+
+
 -	Registering a model
+
+![](media/23_Model.PNG)
+
+
 -	Improve Model
 -	Archiving Model and moving previous model to archive
 -	Registering Model in Azure ML and Deploying to AKS Cluster
 
 
+## 7. Uploading Data Manually (covered in notebook) 
+
+
+Uploading Datasets:
+
+When you select File-> Upload Data, select on hyper link.
+
+![](media/a8fc39b1bf631d7b639ee11c538f79d8.png)
+
+Note they will give you some default pySpark code based on the fact is is a csv file.
+
+![](media/17_readfile.PNG)
