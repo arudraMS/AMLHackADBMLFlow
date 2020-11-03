@@ -195,11 +195,24 @@ Go ahead and create a folder - samples and place them in there.
 
 ## 4.  Install Libraries:
 
+On the cluster tab, click on your cluster and slect install new.
+
+![](media/14_InstallLibraries.PNG)
+
+
 ![](media/099fee9d5b21f6d6b977214f2e163063.png)
 
 Install ML Flow
 
-![](media/ee738473652cbe28b140acdafb77dfb4.png)
+| PyPI Packages to install |
+| :-------------| 
+| azureml-mlflow|
+| mlflow|
+
+
+![](media/15_InstallLibraries.PNG)
+
+
 
 
 
