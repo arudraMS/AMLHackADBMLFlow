@@ -128,6 +128,8 @@ Select a Cluster Mode of **Standard**
 |High Concurrency| Shared for multiple users |
 | Single Node| A Single Node cluster is a cluster consisting of a Spark driver and no Spark workers (in public preview) |
 
+**We can go ahead and specify work nodes 1-3**
+
 ![](media/cb254ed5e6b9bb725c18e51b600e6888.png)
 
  
@@ -209,10 +211,12 @@ On the cluster tab, click on your cluster and slect install new.
 
 Install ML Flow
 
-| PyPI Packages to install |
-| :-------------| 
-| azureml-mlflow|
-| mlflow|
+
+
+| PyPI Packages to install | Comment |
+| :-------------| :-------------| 
+| azureml-mlflow| |
+| mlflow| Actually already installed, but doesn't hurt to install |
 
 
 ![](media/15_InstallLibraries.PNG)
