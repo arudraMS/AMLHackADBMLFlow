@@ -11,7 +11,7 @@
 
 5.  Uploading Manual Data
 
-6.  Let's dig into the notebook.
+6.  Running Sample Notebook
 
 
 ## 1. Preparing Environment – Securing Sensitive Information
