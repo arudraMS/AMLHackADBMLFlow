@@ -149,15 +149,6 @@ Setting Environment Variables
 
 ![](media/a220099bbc374b7c11e0016fbbc4b3ec.png)
 
-### Install Libraries:
-
-![](media/099fee9d5b21f6d6b977214f2e163063.png)
-
-Install ML Flow
-
-![](media/ee738473652cbe28b140acdafb77dfb4.png)
-
-
 
 ## 3. Importing Notebooks 
 
@@ -202,8 +193,17 @@ The 2 files: `BaseExperiment.ipynb` `BaseExperimentWithAzureMLIntegration.ipynb`
 Go ahead and create a folder - samples and place them in there.
 
 
+## 4.  Install Libraries:
 
-## 4. Databricks Extensibility (Optional Content):
+![](media/099fee9d5b21f6d6b977214f2e163063.png)
+
+Install ML Flow
+
+![](media/ee738473652cbe28b140acdafb77dfb4.png)
+
+
+
+## 5. Databricks Extensibility (Optional Content):
 
 Databricks Rest APIS <https://docs.databricks.com/dev-tools/api/index.html>
 
@@ -234,7 +234,7 @@ Just don't forget to provide the token
 
 
 
-## 5. Uploading Data Manually
+## 6. Uploading Data Manually
 
 
 Uploading Datasets:
@@ -243,7 +243,7 @@ Uploading Datasets:
 
 
 
-## 6.  Let's dig into the notebook
+## 7.  Let's dig into the notebook
 
 In the notebook we will cover:
 
