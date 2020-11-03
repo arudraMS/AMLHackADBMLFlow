@@ -13,6 +13,11 @@
 
 6.  Let's dig into the notebook.
 
+Good additional resources:
+
+<https://docs.microsoft.com/en-us/azure/databricks/_static/notebooks/pandas-to-koalas-in-10-minutes.html>
+
+
 
 ## 1. Preparing Environment – Securing Sensitive Information
 
@@ -185,10 +190,9 @@ Note that we will have to manually load notebooks 1 at a time if they are `*.pyn
 Import the following:
 
 - FullExperiment.ipynb
-- BaseExperimentWithAzureMLIntegration.ipynb
 - BaseExperiment.ipynb
 
-The 2 files: `BaseExperiment.ipynb` `BaseExperimentWithAzureMLIntegration.ipynb` are really just for reference, so you can move them into a folder to keep your workspace clean if you would like.
+The files: `BaseExperiment.ipynb` is really just for reference, so you can move them into a folder to keep your workspace clean if you would like.
 
 Go ahead and create a folder - samples and place them in there.
 
