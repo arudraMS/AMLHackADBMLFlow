@@ -233,7 +233,7 @@ Click on the **generate new token** button
 
 ### Sample Curl to get list of clusters  (Optional Content):
 ```
-curl -X GET -H 'Authorization: Bearer dapi09a1af0770a1c777e4b962e8a54607e1' https://adb-1797455930767468.0.databricks.azure.us//api/2.0/clusters/list
+curl -X GET -H 'Authorization: Bearer dapi0XXXXXXXXXX' https://adb-1797455930767468.0.databricks.azure.us//api/2.0/clusters/list
 ```
 
 We can also examine the list of secrets in a secret scope.
